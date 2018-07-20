@@ -67,6 +67,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias start="cd ~/Developer/skillshare; ./bin/start"
+alias pullall="~/Developer/bash-scripts/bin/pullall.sh"
+alias fetchall="~/Developer/bash-scripts/bin/fetchall.sh"
+alias checkoutall="~/Developer/bash-scripts/bin/checkoutall.sh"
+alias delete-merged="~/Developer/bash-scripts/bin/delete_merged.sh"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
