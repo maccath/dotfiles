@@ -71,6 +71,7 @@ alias pullall="~/Developer/bash-scripts/bin/pullall.sh"
 alias fetchall="~/Developer/bash-scripts/bin/fetchall.sh"
 alias checkoutall="~/Developer/bash-scripts/bin/checkoutall.sh"
 alias delete-merged="~/Developer/bash-scripts/bin/delete_merged.sh"
+alias recent-churn="git churn --since='3 months ago' . | tail -10"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
