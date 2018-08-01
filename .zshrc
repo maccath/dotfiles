@@ -85,3 +85,7 @@ prompt spaceship
 if [ -f ~/.bash_login ]; then
     source ~/.bash_login
 fi
+
+if [ -f ~/Dotfiles/private-vars ]; then
+    source ~/Dotfiles/private-vars
+fi
