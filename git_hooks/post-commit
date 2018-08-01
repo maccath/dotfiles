@@ -1,0 +1,11 @@
+#!/bin/sh
+
+MESSAGE=$(git log -1 HEAD --pretty=format:%s)
+DATE_TODAY=$(date +"%Y-%m-%d %H:%M:%S")
+LABEL='code commit'
+
+echo "Logging a RescueTime highlight...\n"
+
+RESPONSE=$(curl --data "key=$RESCUETIME_API_KEY&highlight_date=$DATE_TODAY&description=$MESSAGE&source=$LABEL" https://www.rescuetime.com/anapi/highlights_post | jq -r '.message')
+
+echo "$RESPONSE"
